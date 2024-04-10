@@ -12,4 +12,4 @@ Use collaborative filtering and CLIP image embeddings to create visualizable use
 6. Visualize user embeddings with Kandinsky or IP Adapter by adding them to a CLIP embedding.
 
 
-
+Open sourced under MIT License
