@@ -51,6 +51,6 @@ for idx, imagen in enumerate(tqdm.tqdm(range(0, len(images), bsz))):
 
 all_image_features = torch.cat(all_image_features)
 torch.save(all_image_features, 'image_features.pt')
-each_df.to_hdf('each_to_each_filtered.hdf', key='huh')
+each_df.to_hdf('flick_each_to_each_filtered', key='huh')
 print(f'excepted: {excepted} done: {done}')
 

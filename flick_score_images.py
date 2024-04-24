@@ -10,7 +10,10 @@ import random
 srs = pd.read_hdf('flick_each_to_each_filtered.hdf', key='huh', index_col=0).iloc[USER]
 print(srs)
 
-new_df = pd.read_hdf('replace_flicker_each_to_each.hdf', key='huh', index_col=0)
+try:
+    new_df = pd.read_hdf('replace_flicker_each_to_each.hdf', key='huh', index_col=0)
+except:
+    new_df = pd.read_hdf('each_to_each_filtered.hdf', key='huh', index_col=0)
 
 interactions = srs.tolist()
 interactions = [0] * len(srs.tolist())

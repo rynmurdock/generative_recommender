@@ -2,6 +2,7 @@ import pandas as pd
 import tqdm
 
 ratings = pd.read_csv('data/FLICKR-AES_image_labeled_by_each_worker.csv', delimiter=',',)
+ratings.columns = ratings.columns.str.strip()
 
 each_to_each = pd.DataFrame(index=pd.unique(ratings.worker), columns=pd.unique(ratings.imagePair)).fillna(0)
 
