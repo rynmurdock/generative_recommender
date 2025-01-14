@@ -1,7 +1,7 @@
 
 # Generative Reccomender
 
-Use collaborative filtering and CLIP image embeddings to create visualizable user embeddings, which can feed back in.
+Use collaborative filtering and CLIP image embeddings to create visualizable user embeddings, which can feed back in. Forgive the incredible messiness of this codebase.
 
 
 1. First download the FLICKER-AES dataset to `data/FLICKR-AES-001` with `FLICKR-AES_image_labeled_by_each_worker.csv` in `data/` as well.
